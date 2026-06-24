@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="pastel_pink">#FFF8BBD0</color>
+    <color name="pastel_pink_light">#FFFCE4EC</color>
+    <color name="pastel_lavender">#FFD1C4E9</color>
+    <color name="pastel_peach">#FFFFCCBC</color>
+    <color name="background_light">#FFFFF5F5</color>
+    <color name="splash_background">#FFFCE4EC</color>
+    <color name="dark_background">#FF1A1218</color>
+</resources>

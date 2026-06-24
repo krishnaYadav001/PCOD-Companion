@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>PCOD Companion — Project Summary</title>
+<style>
+  @page {
+    size: A4;
+    margin: 18mm 16mm;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    color: #2D2235;
+    background: #FFF8F8;
+    line-height: 1.55;
+    font-size: 11pt;
+    margin: 0;
+    padding: 0;
+  }
+  .cover {
+    text-align: center;
+    padding: 60px 0 40px;
+    border-bottom: 3px solid #F8BBD0;
+    margin-bottom: 32px;
+    page-break-after: avoid;
+  }
+  .cover h1 {
+    font-size: 30pt;
+    margin: 0 0 8px;
+    color: #B83363;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+  }
+  .cover .subtitle {
+    font-size: 13pt;
+    color: #6E5670;
+    font-style: italic;
+    margin: 4px 0 0;
+  }
+  .cover .meta {
+    font-size: 10pt;
+    color: #9A8A9C;
+    margin-top: 18px;
+  }
+  h2 {
+    font-size: 18pt;
+    color: #8E2A56;
+    border-bottom: 2px solid #F8BBD0;
+    padding-bottom: 6px;
+    margin-top: 36px;
+    margin-bottom: 14px;
+    page-break-after: avoid;
+  }
+  h3 {
+    font-size: 13pt;
+    color: #6B3F77;
+    margin-top: 22px;
+    margin-bottom: 8px;
+    page-break-after: avoid;
+  }
+  p { margin: 8px 0; }
+  ul, ol { margin: 8px 0 8px 22px; padding: 0; }
+  li { margin: 3px 0; }
+  strong { color: #5C2A4A; }
+  em { color: #6E5670; }
+  code {
+    font-family: "Consolas", "Courier New", monospace;
+    background: #F4E8EE;
+    color: #8E2A56;
+    padding: 1px 5px;
+    border-radius: 4px;
+    font-size: 9.5pt;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 12px 0;
+    page-break-inside: avoid;
+    background: #FFFFFF;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  th, td {
+    border: 1px solid #EAD5DD;
+    padding: 8px 10px;
+    text-align: left;
+    vertical-align: top;
+    font-size: 10pt;
+  }
+  th {
+    background: #FCE4EC;
+    color: #8E2A56;
+    font-weight: 600;
+  }
+  tr:nth-child(even) td { background: #FBF5F8; }
+  .callout {
+    background: #FFF1F4;
+    border-left: 4px solid #F48FB1;
+    padding: 10px 14px;
+    margin: 14px 0;
+    border-radius: 4px;
+    page-break-inside: avoid;
+  }
+  .callout.green {
+    background: #E8F5EC;
+    border-left-color: #81C784;
+  }
+  .callout.lavender {
+    background: #EDE7F6;
+    border-left-color: #B39DDB;
+  }
+  .callout.peach {
+    background: #FBE9E7;
+    border-left-color: #FFAB91;
+  }
+  .pillset { margin: 8px 0; }
+  .pill {
+    display: inline-block;
+    background: #FCE4EC;
+    color: #8E2A56;
+    padding: 2px 9px;
+    border-radius: 12px;
+    font-size: 9pt;
+    margin-right: 4px;
+    margin-bottom: 4px;
+  }
+  .pill.green { background: #E3F2DC; color: #2E7D32; }
+  .pill.lav { background: #EDE7F6; color: #4527A0; }
+  .pill.peach { background: #FBE9E7; color: #BF360C; }
+  .tldr {
+    background: linear-gradient(135deg, #FCE4EC 0%, #EDE7F6 100%);
+    padding: 16px 20px;
+    border-radius: 12px;
+    margin: 24px 0 8px;
+    page-break-inside: avoid;
+  }
+  .tldr h2 {
+    border: none;
+    margin: 0 0 8px;
+    padding: 0;
+    color: #5C2A4A;
+  }
+  .check { color: #2E7D32; font-weight: 700; }
+  .warn { color: #C77800; font-weight: 700; }
+  .footer {
+    margin-top: 40px;
+    padding-top: 16px;
+    border-top: 1px solid #EAD5DD;
+    font-size: 9pt;
+    color: #9A8A9C;
+    text-align: center;
+  }
+  .section-num {
+    color: #F48FB1;
+    font-weight: 700;
+    margin-right: 8px;
+  }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <h1>🌸 PCOD Companion</h1>
+  <div class="subtitle">Project Summary &amp; Design Documentation</div>
+  <div class="meta">A calm, intelligent Android wellness companion for women managing PCOD</div>
+</div>
+
+<p>The app <strong>observes patterns, offers gentle suggestions, and provides emotional support</strong> — designed to feel like a friend, not a clinical tracker.</p>
+
+<h2><span class="section-num">1</span>What the App Does</h2>
+
+<h3>Daily wellness logging</h3>
+<p>Track everything that matters in one place — water, sleep, mood, food, exercise, stress, symptoms, medications, emotional state. Each field uses preset chips (≤2 taps to log) so the experience never feels like a form.</p>
+
+<h3>Personalized weekly plan</h3>
+<p>Build a routine of recurring tasks across <strong>Diet, Exercise, and Lifestyle</strong> categories. Tasks can be assigned to specific weekdays. A built-in generator creates a starter PCOD-friendly routine based on wake/sleep time, diet preference, and goal.</p>
+
+<h3>Cycle tracking</h3>
+<p>Log period start/end dates, flow level, and symptoms. Empty-state UI gently invites first entry.</p>
+
+<h3>Pattern detection (Insights)</h3>
+<p>Six observational patterns auto-detected from logged data — never prescriptive, always gentle:</p>
+<ul>
+  <li>Sleep ↔ Mood</li>
+  <li>Sugar ↔ Acne</li>
+  <li>Exercise ↔ Energy</li>
+  <li>Hydration ↔ Energy</li>
+  <li>Stress ↔ Sleep quality</li>
+  <li>Protein ↔ Mood</li>
+</ul>
+
+<h3>History &amp; Summary</h3>
+<p>Browse past days as a calendar. Weekly summary with stats plus a <strong>doctor-export feature</strong> for sharing wellness reports.</p>
+
+<h2><span class="section-num">2</span>Screens &amp; What They Do</h2>
+<table>
+  <tr><th>Screen</th><th>Purpose</th></tr>
+  <tr><td><strong>Today</strong></td><td>Main hub — focus card, cycle recommendation, insight, plan suggestion, end-of-day closure, emotional check-in, today's progress, plan checklist, daily movement, mini wellness break, quick track tiles, symptoms, medications, weekly reflection</td></tr>
+  <tr><td><strong>Plan Builder</strong></td><td>Build/edit weekly routine with category-tinted cards, day-pill tabs, history hint, generator, snackbar feedback</td></tr>
+  <tr><td><strong>Cycle Tracker</strong></td><td>Log period dates and symptoms</td></tr>
+  <tr><td><strong>Summary</strong></td><td>Weekly stats + doctor export + gear icon → Settings</td></tr>
+  <tr><td><strong>History</strong></td><td>Calendar view of past logs</td></tr>
+  <tr><td><strong>Settings</strong></td><td>Profile, theme, Quiet Mode, reminders, backup/restore, send feedback</td></tr>
+</table>
+
+<h2><span class="section-num">3</span>Tech Stack</h2>
+<ul>
+  <li><strong>Language &amp; build:</strong> Kotlin 2.2.10 · AGP 9.2.0 · Gradle 9.4.1 · JDK 21 · minSdk 26 / targetSdk 34</li>
+  <li><strong>UI:</strong> Jetpack Compose + Material 3 (compose-bom 2024.04.00) · Navigation Compose 2.7.7</li>
+  <li><strong>DI:</strong> Hilt 2.59.2 + Hilt-Work 1.2.0</li>
+  <li><strong>Persistence:</strong> Room 2.8.4 (schema <strong>v13</strong>, <code>exportSchema = false</code>)</li>
+  <li><strong>Background work:</strong> WorkManager 2.9.0</li>
+  <li><strong>Architecture:</strong> Single activity · Compose-only · MVVM with repository pattern</li>
+</ul>
+
+<h2><span class="section-num">4</span>Engagement Features</h2>
+
+<h3>Reward presence, not perfection</h3>
+<ul>
+  <li><strong>End-of-day closure card</strong> — first open of each day, gently summarizes yesterday based on logged data, non-judgmental at every completion level</li>
+  <li><strong>Streak tracking</strong> without shaming on broken streaks</li>
+  <li><strong>Soft failure feedback</strong> — empty states use floral language ("A fresh start ✨") never "no data" or "error"</li>
+</ul>
+
+<h3>Make every interaction feel light</h3>
+<ul>
+  <li><strong>Optimistic UI updates</strong> — checkboxes flip instantly, DB write happens in background</li>
+  <li><strong>Haptic feedback</strong> on every state-mutating tap</li>
+  <li><strong>Micro-interactions</strong> — press scale, accent border highlight, smooth list reorders, animated day-pill tabs</li>
+  <li><strong>Snackbars not popups</strong> — rotating gentle messages ("Your week looks balanced 🌿")</li>
+</ul>
+
+<h3>Adaptive reminders</h3>
+<p>Three tiers (Low/Medium/High) for morning, hydration, evening check-ins, plus a daily re-engagement worker. Workers are smart — they skip if the user already engaged today, back off when ignored repeatedly (3+ ignores → every other day, 5+ → Mondays only), and reset when the user opens the app again.</p>
+
+<h3>Quiet Mode</h3>
+<p>A dedicated toggle that hides all suggestion cards (Focus, Insight, Plan Suggestion, Closure) and silences feedback snackbars. Logging and tracking remain unaffected. Reminder workers respect Quiet Mode — except the re-engagement nudge (intentional safety net).</p>
+
+<h3>First-launch guidance</h3>
+<ul>
+  <li>Notification permission prompt with reasoning</li>
+  <li>First-insight helper card explaining what insights are</li>
+  <li>Empty-state CTAs throughout</li>
+</ul>
+
+<h3>Local backup &amp; restore</h3>
+<p>JSON export/import via Storage Access Framework. Versioned format (currently <code>BACKUP_VERSION = 3</code>) for forward compatibility. Replace mode wipes existing data and inserts from backup; insights regenerate.</p>
+
+<h2><span class="section-num">5</span>Emotional Design Philosophy</h2>
+<table>
+  <tr><th>Principle</th><th>How it's applied</th></tr>
+  <tr><td><strong>Calm over loud</strong></td><td>Pastel palette only — pinks, lavenders, peaches, greens. No neons, no alarming reds</td></tr>
+  <tr><td><strong>Observational, not prescriptive</strong></td><td>Insights say "you felt better when…" not "you must do…"</td></tr>
+  <tr><td><strong>Opt-in everything</strong></td><td>Suggestions render as cards with Accept/Dismiss; nothing auto-mutates user data</td></tr>
+  <tr><td><strong>Reward presence</strong></td><td>Closure cards celebrate showing up at all, even at 0%</td></tr>
+  <tr><td><strong>Soft failure feedback</strong></td><td>Floral language replaces clinical words (no "error", "failed", "invalid")</td></tr>
+  <tr><td><strong>Quiet Mode aware</strong></td><td>All suggestion cards check <code>state.quietMode</code> before rendering</td></tr>
+</table>
+
+<h2><span class="section-num">6</span>Design System</h2>
+<p>Codified in <code>.claude/skills/pcod-design/SKILL.md</code></p>
+
+<h3>Color palette</h3>
+<div class="pillset">
+  <span class="pill">PastelPink — primary</span>
+  <span class="pill lav">PastelLavender — secondary</span>
+  <span class="pill peach">PastelPeach — tertiary</span>
+  <span class="pill green">PastelGreen — Diet</span>
+</div>
+<p>Full dark-mode mirror palette also defined.</p>
+
+<h3>Category visual identity</h3>
+<table>
+  <tr><th>Category</th><th>Emoji</th><th>Background</th><th>Accent</th></tr>
+  <tr><td>Diet</td><td>🥗</td><td>PastelGreenLight</td><td>PastelGreenDark</td></tr>
+  <tr><td>Exercise</td><td>🧘‍♀️</td><td>PastelLavenderLight</td><td>PastelLavenderDark</td></tr>
+  <tr><td>Lifestyle</td><td>🌿</td><td>PastelPeachLight</td><td>PastelPeachDark</td></tr>
+</table>
+
+<h3>Motion specs</h3>
+<ul>
+  <li>Press scale: 140ms tween, 1f → 0.97f</li>
+  <li>Highlight border: 200ms tween, accent at 55% alpha</li>
+  <li>List reorder/insert: 350ms tween via <code>animateItemPlacement()</code></li>
+  <li>Color/progress tweens: 500–600ms</li>
+  <li>Spring scale on selection: <code>spring(MediumBouncy, MediumLow)</code></li>
+</ul>
+
+<h3>Spacing &amp; shape</h3>
+<p>Cards 16–22dp corners, chips 6–14dp · Vertical rhythm 4/8/12/16/24dp · 44dp minimum touch target · Pills via <code>RoundedCornerShape(percent = 50)</code></p>
+
+<div class="callout">
+  <strong>Critical rule (we've shipped this bug twice — third time = unforgivable):</strong><br>
+  Cards with <strong>fixed light pastel backgrounds</strong> (Today's Focus, all category cards) must use the constant <code>OnCategoryPastel</code> (<code>Color(0xFF2D2235)</code>) for text — <strong>never</strong> <code>MaterialTheme.colorScheme.onSurface</code>, which flips to near-white in dark mode and becomes invisible.
+</div>
+
+<h2><span class="section-num">7</span>Database Discipline</h2>
+<p>Room <strong>strictly validates</strong> entity vs. DB schema after migration. Mismatched defaults crash the app on startup.</p>
+
+<h3>When adding a column:</h3>
+<ol>
+  <li>Add field to <code>@Entity</code> with <code>@ColumnInfo(defaultValue = "...")</code> matching migration SQL <strong>exactly</strong></li>
+  <li>Bump <code>version</code> in <code>@Database(...)</code></li>
+  <li>Add <code>MIGRATION_OLD_NEW</code> object in <code>AppDatabase.companion</code></li>
+  <li>Register in <code>AppModule.provideDatabase()</code> <code>.addMigrations(...)</code></li>
+  <li>Update <code>BackupManager</code> toJson/fromJson + bump <code>BACKUP_VERSION</code> if format changes</li>
+</ol>
+
+<p><strong>Conventions:</strong> Booleans → INTEGER <code>"0"</code> · Strings → TEXT <code>""</code> · Numbers → INTEGER/REAL · Sentinel "not measured" → INTEGER <code>"-1"</code></p>
+
+<h3>Current schema (v13)</h3>
+<ul>
+  <li><code>daily_logs</code> — date, mood, symptoms, water, sleep, exercise, fruit, sugar, stress, sleepQuality, protein, medications, streak, emotionalCheckIn, <strong>planCompletionPct</strong> (newest)</li>
+  <li><code>cycle_entries</code> — startDate, endDate, flowLevel, symptoms, notes</li>
+  <li><code>plan_items</code> — title, description, category, isCompleted, orderIndex, daysOfWeek</li>
+  <li><code>insights</code> — key (unique), message, createdAt, lastShownAt, showCount</li>
+</ul>
+
+<h2><span class="section-num">8</span>Architecture Conventions</h2>
+<ul>
+  <li><strong>One activity, Compose-only.</strong> No fragments.</li>
+  <li><strong>MVVM</strong> — each screen has <code>XxxScreen</code> + <code>XxxViewModel</code> (<code>@HiltViewModel</code>). State via <code>MutableStateFlow&lt;XxxUiState&gt;</code>.</li>
+  <li><strong>Repository pattern</strong> — ViewModels never touch DAOs directly; go through <code>PCODRepository</code> / <code>SettingsRepository</code>.</li>
+  <li><strong>One-shot UI events</strong> via <code>MutableSharedFlow</code> collected with <code>LaunchedEffect</code>.</li>
+  <li><strong>Optimistic updates</strong> in <code>TodayViewModel.updateLogOptimistic { ... }</code>.</li>
+  <li><strong>Quiet Mode chokepoint</strong> — <code>TodayViewModel.emitFeedback()</code> is the only way to fire feedback snackbars.</li>
+  <li><strong>Reminder schedule chokepoint</strong> — <code>WorkManagerHelper.applyReminderSchedule()</code> is the single entry point for adaptive reminder workers.</li>
+</ul>
+
+<h2><span class="section-num">9</span>What's Already Built</h2>
+
+<h3>Foundation <span class="check">✓</span></h3>
+<ul>
+  <li>Splash screen + Compose host</li>
+  <li>Bottom navigation with 5 tabs</li>
+  <li>Light + Dark + System theme support</li>
+  <li>Pastel design system + Material 3 theme</li>
+</ul>
+
+<h3>Data layer <span class="check">✓</span></h3>
+<ul>
+  <li>Room v13 with 11 migrations</li>
+  <li>Backup/restore (JSON, versioned)</li>
+  <li>Settings repository (SharedPreferences)</li>
+  <li>File provider for sharing exports</li>
+</ul>
+
+<h3>Today screen <span class="check">✓</span></h3>
+<ul>
+  <li>Daily focus card, cycle recommendation, insight rotation</li>
+  <li>Emotional check-in, progress visualization, plan checklist</li>
+  <li>Quick track tiles (water, sleep, fruit, etc.)</li>
+  <li>Symptoms, medications, weekly reflection</li>
+  <li>End-of-day closure (gated by <code>lastClosureShownDate</code>)</li>
+  <li>First-insight helper, first-launch reminder prompt</li>
+</ul>
+
+<h3>Plan Builder <span class="check">✓</span> <em>(most polished, recent focus)</em></h3>
+<ul>
+  <li>Category-tinted cards with emoji avatars, day chips, edit + drag handles</li>
+  <li>Animated pill day-tabs with per-day emojis (🌱🌷🌼🍃✨🌸🌙)</li>
+  <li>Press scale + highlight micro-interactions</li>
+  <li>Smooth <code>animateItemPlacement</code> on reorders</li>
+  <li>Empty state with CTA button</li>
+  <li>Rotating snackbar feedback after add/edit/generate</li>
+  <li>Day-history hint ("You usually complete X% of your Tuesday plan")</li>
+  <li>Routine generator (wake/sleep time + diet pref + goal)</li>
+</ul>
+
+<h3>Other screens <span class="check">✓</span></h3>
+<ul>
+  <li><strong>Cycle Tracker</strong> — Add/edit cycle entries with friendly empty state</li>
+  <li><strong>Summary</strong> — Weekly stats, doctor export, gear icon → Settings</li>
+  <li><strong>History</strong> — Calendar view with filled-circle indicators</li>
+  <li><strong>Settings</strong> — Profile, theme, Quiet Mode, reminders, backup/restore, feedback</li>
+</ul>
+
+<h3>Background work <span class="check">✓</span></h3>
+<ul>
+  <li><strong>DailyResetWorker</strong> (midnight) — creates today's empty log, snapshots yesterday's plan completion, resets plan checkboxes</li>
+  <li>Morning/Hydration/Evening reminder workers (smart guards skip when redundant)</li>
+  <li><strong>Re-engagement worker</strong> (11 AM, fires only after 2-day silence, exempt from Quiet Mode)</li>
+</ul>
+
+<h3>Persistent context <span class="check">✓</span></h3>
+<ul>
+  <li><code>CLAUDE.md</code> — project conventions and gotchas</li>
+  <li><code>.claude/skills/pcod-design/SKILL.md</code> — full design system spec</li>
+  <li>Auto-memory entries for user workflow + Room migration discipline</li>
+</ul>
+
+<h2><span class="section-num">10</span>Things Worth Knowing (Gotchas)</h2>
+<table>
+  <tr><th>Topic</th><th>What to remember</th></tr>
+  <tr><td>AGP 9.x with <code>compileSdk = 34</code></td><td>Unusual combo — works but expect warnings. Don't bump compileSdk without checking other deps</td></tr>
+  <tr><td>WorkManager init</td><td>App implements <code>Configuration.Provider</code> and disables the default initializer in manifest. Don't re-enable it</td></tr>
+  <tr><td><code>scheduleDailyReset()</code></td><td>Runs in <code>Application.onCreate()</code> — keep fast, no blocking work</td></tr>
+  <tr><td>Splash theme</td><td><code>Theme.PCODCompanion.Splash</code> extends <code>Theme.SplashScreen</code>. Don't change activity theme without updating both styles</td></tr>
+  <tr><td>Room destructive fallback</td><td>Rebuilds the table — fine in dev, but <strong>does NOT help with column-default validation mismatches</strong>. Always match defaults exactly</td></tr>
+  <tr><td>Backup format</td><td>Versioned. Update toJson/fromJson AND bump <code>BACKUP_VERSION</code> if format changes incompatibly</td></tr>
+  <tr><td>FileProvider authority</td><td><code>${applicationId}.fileprovider</code>, paths in <code>res/xml/file_paths.xml</code></td></tr>
+  <tr><td>Adaptive reminders single entry</td><td>Always go through <code>WorkManagerHelper.applyReminderSchedule()</code>. Workers themselves decide whether to fire</td></tr>
+  <tr><td>Re-engagement is exempt from Quiet Mode</td><td>Intentional — it's the safety net for inactive users</td></tr>
+  <tr><td>Insights are derived data</td><td>Wiped + regenerated on backup-import-replace and Reset All Data</td></tr>
+  <tr><td>Quiet Mode chokepoint</td><td>In <code>TodayViewModel</code>, ALWAYS use <code>emitFeedback(msg)</code> — never <code>_feedbackEvents.tryEmit</code> directly</td></tr>
+  <tr><td>Plan completion tracking is forward-looking</td><td>Pre-existing logs have <code>planCompletionPct = -1</code>. Real percentages accumulate going forward via the midnight worker. Day-history hint hides until ≥3 measured logs exist</td></tr>
+  <tr><td>Notification icon must be monochrome</td><td>Status bar tints small icons to a single color. Use <code>ic_notification.xml</code> (white-on-transparent leaf vector)</td></tr>
+</table>
+
+<h2><span class="section-num">11</span>What Could Still Be Improved</h2>
+
+<h3>High-impact polish</h3>
+<ul>
+  <li>Add/Edit/Generator bottom sheets still use plain category chips — should use category emoji + colors</li>
+  <li>Day picker inside Add/Edit sheets uses small grey FlowRow chips with no haptic — should reuse the new <code>DayPill</code> composable</li>
+  <li>Generator dialog uses <code>OutlinedTextField</code> for time entry — would feel warmer with chip presets ("6 AM", "7 AM", "8 AM")</li>
+  <li>Drag-to-reorder on plan items — drag handle icon is visual only; needs gesture plumbing or the <code>reorderable</code> library</li>
+</ul>
+
+<h3>Branding</h3>
+<ul>
+  <li>Launcher icon still uses the JPEG hack — long-term should be a proper adaptive icon with vector-traced "P+leaf" logo as the foreground</li>
+  <li>The placeholder star in <code>ic_launcher_foreground.xml</code> is unused; can be deleted once a real foreground exists</li>
+</ul>
+
+<h3>Possible new features</h3>
+<ul>
+  <li>Lock screen widget for quick-track water/mood</li>
+  <li>Weekly summary push notification (opt-in, respects Quiet Mode)</li>
+  <li>Onboarding carousel for first-time users</li>
+  <li>Cycle prediction algorithm based on logged history</li>
+</ul>
+
+<h2><span class="section-num">12</span>How to Build &amp; Run</h2>
+<ol>
+  <li>Open in Android Studio, plug in phone, hit <strong>Run</strong></li>
+  <li>For schema/db crashes during dev: uninstall first via <code>adb uninstall com.pcodcompanion</code></li>
+  <li>Logcat filter for crashes: <code>package:mine level:ERROR</code></li>
+</ol>
+
+<div class="tldr">
+  <h2>TL;DR</h2>
+  <p>A <strong>production-ready Kotlin/Compose Android app</strong> for PCOD wellness companionship with <strong>6 main screens, 13-version Room database, adaptive reminder system, JSON backup/restore, dark mode, Quiet Mode, persistent insights, end-of-day closure, and a fully codified design system</strong>. The defining quality is its <strong>emotional design</strong> — every interaction is calm, opt-in, and non-judgmental. Most recent work focused on the Plan Builder, which now has the most polished UI in the app and serves as the reference implementation of the design system.</p>
+</div>
+
+<div class="footer">
+  Generated with care for PCOD Companion 🌸<br>
+  This document reflects the project state as of the most recent build.
+</div>
+
+</body>
+</html>
